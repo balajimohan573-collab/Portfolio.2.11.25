@@ -1,0 +1,100 @@
+body{
+   
+    margin: 20px;
+    padding-top: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    ;
+
+}
+/* Background video styling */
+#bg-video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  z-index: -1;
+  pointer-events: none; /* Prevents accidental clicks */
+}
+#head{
+    
+    font-size: 59px;
+    justify-items: center;
+    font-weight: 700;
+    
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+    color: rgb(253, 82, 14);
+    box-shadow: 0 10px 15px slategrey;
+    animation-name: change;
+    animation-duration: 2s;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+    
+    
+    background-color: transparent;
+}
+@keyframes change {
+    0% {
+        color: snow;
+    }
+    50% {
+        color: rgb(255, 69, 0);
+    }
+    70%{
+        color:chartreuse;
+    }
+    100% {
+        color: black;
+    }
+}
+.calculator{
+    justify-content: center;
+    justify-items: center;
+    text-align: center;
+    justify-items: center;
+
+    margin-top: 50px;
+    border: 2px solid black;
+    padding: 20px;
+    width: 300px;
+    height: auto;
+    box-shadow: 0 10px 15px slategrey;
+    background-color: rgba(43, 42, 42, 0.685);
+    border-radius: 10px;
+    
+}
+#display{
+    width: 100%;
+    height: 50px;
+    font-size: 18px;
+    text-align: right;
+    margin-bottom: 10px;
+    border: 2px solid black;
+    box-shadow: 0 5px 10px rgb(121, 117, 117);
+    border-radius: 5px;
+    padding-right: 10px;
+    justify-items: center;
+    color: black;
+    background-color: rgb(250, 239, 239)
+}button{
+    width: 60px;
+    height: 40px;
+    font-size: 18px;
+    margin: 5px;
+    border: none;
+    border-radius: 70px;
+    box-shadow: 0 5px 10px rgb(13, 13, 14);
+    cursor: pointer;
+    background-color: rgb(220, 220, 220);
+    transition: background-color 0.3s ease;
+}
+button:hover{
+    background-color: rgb(169, 169, 169);
+}
+.center-wrapper{
+    justify-items: center;  
+    justify-self: center;
+}

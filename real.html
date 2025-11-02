@@ -1,0 +1,66 @@
+<html>
+    <head><title>Balaji calculator</title>
+    <link rel="stylesheet" href="real.css"></head>
+<body>
+    <video autoplay muted loop id="bg-video">
+    <source src="bg.mp4" type="video/mp4" />
+    </video>
+    
+    
+    <h1 id="head">Balaji Calculator</h1>
+<div class="center-wrapper">
+
+    <div class="calculator">
+        <input type="text" id="display" readonly/>
+            
+        <div class="buttons">
+            <button class="btn" data-value="7">7</button>
+            <button class="btn" data-value="8">8</button>
+            <button class="btn" data-value="9">9</button>
+            <button class="btn" data-value="/">/</button>
+            <button class="btn" data-value="4">4</button>
+            <button class="btn" data-value="5">5</button>
+            <button class="btn" data-value="6">6</button>
+            <button class="btn" data-value="*">*</button>
+            <button class="btn" data-value="1">1</button>
+            <button class="btn" data-value="2">2</button>
+            <button class="btn" data-value="3">3</button>
+            <button class="btn" data-value="-">-</button>
+            <button class="btn" data-value="0">0</button>
+            <button class="btn" data-value="+">+</button>
+            <button class="btn" id="clear">C</button>
+            <button class="btn" id="backspace">back</button>
+            <button class="btn" data-value="(">(</button>
+            <button class="btn" data-value=")">)</button>
+            <button class="btn" data-value="%">%</button>
+            <button class="btn" data-value=".">.</button>
+            <button class="btn" id="equals">=</button>
+
+    </div>
+    <script>
+    let display = document.getElementById('display'); // ✅ Fixed typo: 'dispaly' → 'display
+    let buttons = document.getElementsByClassName('btn');
+
+    for (let button of buttons) {
+        button.addEventListener('click', function () {
+            let value = this.getAttribute('data-value');
+
+            if (value) {
+                display.value += value;
+            } else if (this.id === 'clear') {
+                display.value = '';
+            } else if (this.id === 'equals') {
+                try {
+                    display.value = eval(display.value);
+                } catch (error) {
+                    display.value = 'Error'; // ✅ Fixed assignment operator
+                }
+            } else if (this.id === 'backspace') {
+                display.value = display.value.slice(0, -1);
+            }
+        });
+    }
+</script>
+ </div>
+</body>
+</html>

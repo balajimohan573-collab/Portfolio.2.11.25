@@ -1,0 +1,286 @@
+/* Base Reset & Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+background: #202024;
+background: linear-gradient(90deg, rgba(32, 32, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%);
+}
+
+/* Layout Container */
+.parent {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+
+/* Header */
+.div1 {
+  font-size: 2rem;
+  color:#bfd3d7;
+  font-weight: bold;
+  text-align: center;
+  background-color: black;
+  display: block;
+  width: 390px;
+  border-radius: 9px;
+ 
+   box-shadow: -2px 9px 13px snow;
+}
+.div1 h1{
+  box-shadow: -2px 9px 3px snow;
+}
+
+/* Social Links */
+.div8 nav {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  font-size: 2rem;
+  align-items: center;
+}
+
+.div8 a {
+  color: coral;
+  text-decoration: none;
+  background-color:transparent;}
+
+a:hover {
+  color: ghostwhite;
+  box-shadow: 0 5px 10px snow;
+  transform: scale(1.3);
+}
+
+/* Profile Image */
+.div3 img {
+  width: 170px;
+  height: 170px;
+  border-radius: 40%;
+  box-shadow: 0 0 20px #d4dee0;
+}
+
+/* About Section */
+.div2 {
+  background-color: rgba(5, 6, 6, 0.8);
+  color:snow;
+  padding: 15px;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 0 10px snow;
+  font-size: 1rem;
+}
+
+/* Skills Section */
+.div4 h3,
+.div5 h3,
+.div6 h3 {
+  text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: snow;
+}
+
+.card1,
+.card2 {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: center;
+}
+
+.card1 img,
+.card2 img,
+.div5 img {
+  width: 90%;
+  max-width: 200px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px snow;
+}
+
+/* Contact Form */
+.forms {
+  width: 100%;
+  max-width: 400px;
+  background-color: rgba(20, 1, 1, 0.9);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 10px 20px snow;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.forms input,
+.forms button {
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+  font-size: 1rem;
+}
+
+.forms input {
+  background-color: #fff;
+  box-shadow: 0 1px 10px snow;
+}
+
+.forms button {
+  background-color: coral;
+  color: white;
+  font-weight: bold;
+  box-shadow: 0 5px 15px snow;
+  cursor: pointer;
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  font-size: 1rem;
+  font-weight: bold;
+  color: snow;
+  margin-top: 20px;
+}
+
+/* 🔥 Enhanced Animation for .s2 */
+@keyframes pulseGlow {
+  0% {
+    box-shadow: 0 0 10px rgba(255, 0, 0, 0.6);
+    transform: scale(1);
+  }
+  25% {
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.6);
+    transform: scale(1.05);
+  }
+  50% {
+    box-shadow: 0 0 25px rgba(0, 255, 0, 0.6);
+    transform: scale(1.1);
+  }
+  75% {
+    box-shadow: 0 0 20px rgba(255, 255, 0, 0.6);
+    transform: scale(1.05);
+  }
+  100% {
+    box-shadow: 0 0 10px rgba(255, 0, 255, 0.6);
+    transform: scale(1);
+  }
+}
+
+.s2 {
+  animation: pulseGlow 2.5s ease-in-out infinite;
+  transition: transform 0.3s ease-in-out;
+  border-radius: 12px;
+}
+
+.s2:hover {
+  transform: translateY(-12px) scale(1.05);
+}
+.toggle-btn{
+  color: aliceblue;
+  background-color: coral;
+  border-radius: 9px;
+  align-items: center;
+  height: 30px;
+  width: 140px;
+}
+.toggle-btn:hover{
+  background-color: whitesmoke;
+  color: coral;
+  font-weight: bold;
+  transform: scale(1.3);
+  box-shadow: 0 0px 20px red;
+  transition: 2s ease;
+}
+
+.btnwrap{
+  display: grid;
+  justify-items: center;
+  border-radius: 7px;
+ 
+
+}
+.display1{
+  font-size: 9px;
+  background-color: yellow;
+  display: grid;
+  align-items: center;
+  text-align: center;
+  justify-items: center;
+  height: 60px;
+  width: 96px;
+  transition: 2s ease;
+ transform: translateY (15px);
+  transform: scale(2.0);
+  border-radius: 7px;
+}
+.display1 p{
+  display: grid;
+  align-items: center;
+  justify-items: center;
+}
+.disback{
+  display: grid;
+  justify-content: center;
+  align-items: center;
+ 
+}
+.display1 button{
+  color: snow;
+  font-size: 10px;
+  background-color: red;
+  border-radius: 5px;
+  text-decoration: none;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.display1 a{
+  color: snow;
+  border: 5px;
+  text-decoration: dotted;
+  font: optional;4px
+}
+/* 📱 Mobile: Horizontal Skill Cards */
+@media (max-width: 767px) {
+  .card1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    padding: 10px;
+  }
+
+  .card1 img {
+    width: 80px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 0 10px snow;
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .card1 img:hover {
+    transform: scale(1.05);
+  }
+
+  .div4 h3 {
+    text-align: center;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+  }
+  .card2{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    padding: 10px;
+  }
+  .card2 img{
+    height: auto;
+    width: 80px;
+  }
+}

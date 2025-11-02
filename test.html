@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Balaji Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+<body>
+  <div class="parent">
+    <header class="wrapper">
+      <h1 class="div1">PORTFOLIO</h1>
+    </header>
+
+    <section class="div2">
+     <p>🌟 About Balaji M<br>
+        🎓 Cyber Security Student @ SIMATS, graduating in 2029<br>
+        💻 Passionate Web Developer skilled in HTML, CSS, JavaScript, and UI design
+      </p>
+    </section>
+
+    <section class="div3">
+      <img src="bala.JPG" alt="Balaji" />
+    </section>
+
+    <section class="div4">
+      <h3>SKILLS</h3>
+      <div class="card1">
+        <img src="html logo.png" alt="HTML" />
+        <img src="css logo.png" alt="CSS" />
+        <img src="js.png" alt="JavaScript" />
+        <img src="c programming logo.png" alt="C Programming" />
+      </div>
+    </section>
+
+    <section class="div5">
+      <h3>PRODUCTS</h3>
+      <div class="card2">
+        <img src="large.png" alt="Product 1" />
+        <a href="real.html" target="_blank"><img src="calbalaji.png" alt="Calculator" /></a>
+        <img src="A futuristic digital.png" alt="Product 3" />
+      </div>
+      <div class="btnwrap">
+      <button class="toggle-btn" onclick="ToggleEvent">About Calculator</button>
+      </div><br><br>
+      <div class="disback">
+      <div class="display1" style="display: none;">
+  <p>Performs Arithmetic operations: Addition, subtraction, multiplication, division.</p>
+  <label>Do you want to see my Calculator?</label><br>
+  <button >
+    <a href="real.html" target="_blank">See</a>
+  </button>
+</div>
+
+       </div>
+    </section>
+
+    <section class="div6">
+      <h3>CONTACT</h3>
+      <form class="forms" action="https://formsubmit.co/balajimohan573@gmail.com" method="POST">
+        <input type="text" name="name" placeholder="Enter your name" required />
+        <input type="email" name="email" placeholder="Enter your email" required />
+        <input type="text" name="text" placeholder="Enter your message" required />
+        <button type="submit">Send</button>
+      </form>
+    </section>
+
+    <section class="div8">
+       <nav>
+        <a href="https://www.linkedin.com/in/balajimohan-undefined-819528389/" target="_blank">
+          <i class="fa-brands fa-linkedin"></i>
+        </a>
+        <a href="https://github.com/balajimohan573-collab" target="_blank">
+          <i class="fa-brands fa-github"></i>
+        </a>
+        <a href="https://www.instagram.com/___bxlx_xx___/" target="_blank">
+          <i class="fa-brands fa-instagram"></i>
+        </a>
+      </nav>
+    </section>
+
+    <footer class="footer">
+      <p>&copy; 2025 Balaji M | Web Developer & Cyber Security Enthusiast</p>
+    </footer>
+    <script>
+  const button = document.querySelector('.toggle-btn');
+  const box = document.querySelector('.display1');
+
+  button.addEventListener('click', () => {
+    box.style.display = box.style.display === 'none' ? 'block' : 'none';
+  });
+  
+   
+   </script>
+
+  </div>
+</body>
+</html>
